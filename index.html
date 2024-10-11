@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Daycare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        *{
+
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+            font-family: "poppins", sans-serif;
+        }
+        html {
+            font-size: 85%;
+            overflow-x: hidden;
+        }
+        body{
+            background-color: #F4DBDB;
+            color: #393f45;
+            text-align: center;
+            margin: 0px;
+            margin-top: 60px;
+        }
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #00AFAB;
+            color: #393f45;
+            margin: 0px;
+            padding: 1em 5% 1em;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 5%;
+        }
+        a {
+            margin-right: 10px;
+        }
+        .title {
+            top: 30px;
+            margin: 0px;
+            padding: 0px;
+                        margin-left: 25px;
+            margin-right: 25px;
+        }
+        h1{
+            font-size: 600%;
+            color: #ee6fa2;
+            font-family: "Chewy", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        h2{
+            font-size: 300%;
+            color: #00AFAB;
+            font-family: "Indie Flower", cursive;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 0px;
+            margin-top: -8px;
+        }
+        .calgary{
+            margin-top: -8px;
+        }
+        h3{
+            color: #ee6fa2;
+            font-family: "Chewy", system-ui;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 250%;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            
+        }
+        .images {
+            display: block;
+            margin-left: 1.5%;
+            margin-right: 1.5%;
+            border-style: solid;
+            border-width: 20px;
+            border-image: linear-gradient(90deg, rgba(0,175,171,1) 0%, rgba(238,111,162,1) 35%, rgba(254,249,249,1) 100%) 1;
+        }
+        img{
+           
+            border-radius: 50%;
+            margin: 2%;
+            margin-left: 25px;
+            margin-right: 25px;
+            width: 350px;
+            height: 350px;
+        }
+        .about{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        video{
+            border: 5px solid #ffffff;
+            border-radius: 5px ;
+            padding: 0;
+            margin-left: 25px;
+            margin-right: 25px;
+
+        }
+        section{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .name{
+            color: #00AFAB;
+            font-family: "Indie Flower", cursive;
+            font-size: 180%;
+        }
+        .phone{
+            margin-top: -8px;
+        }
+        .btn{
+            background-image: linear-gradient(90deg, rgba(0,175,171,1) 0%, rgba(238,111,162,1) 75%, rgba(254,249,249,1) 100%);
+            padding: 10px;
+            border-radius: 20px;
+            color: #ffffff;
+            font-family: "Chewy", system-ui;
+            font-size: large;
+            border: 1.5px solid #ffffff;
+        }
+        .btn:hover{
+            background-color: #F4DBDB;
+            border: 1.5px solid #393f45;
+            color: #393f45;
+            display: inline-block;
+            background-image: none;
+        }
+        footer{
+            background-color: #ee6fa2;
+            margin: 0px;
+            padding: 1em 5% 1em;
+            margin-left: -2px;
+            margin-right: -2px;
+            width: 100%;
+        }
+
+                .emailBox{
+            background-color: #00AFAB;
+            margin-left: 0%;
+            margin-right: 0%;
+            padding: 15px;
+        }
+            .contact{
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+  
+        @media(max-width:1000px){
+            section{
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+            .about{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+            .images {
+                margin-left: 22%;
+                margin-right: 22%;
+            }
+            img {
+                width: 250px;
+                height: 250px;
+            }
+            .emailBox{
+            background-color: #00AFAB;
+            margin-left: 0%;
+            margin-right: 0%;
+            padding: 15px;
+        }
+            .contact{
+                margin-left: 0%;
+                margin-right: 0%;
+            }
+        }
+        @media(max-width:750px){
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#testimonial">Testimonial</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="title" id="home">
+        <h1>
+            DayHome
+        </h1>
+        <h2>
+            Creative Mind 
+        </h2>
+        <p class="calgary">in Calgary</p>
+    </section>
+</br></br>
+    <div class="images">
+        <img  src="file:///C:\Users\cece calmets\OneDrive\Bureau\daycare kiddos 2.jpg">
+        <img  src="file:///C:\Users\cece calmets\OneDrive\Bureau\CreativeMindDayhome.png">
+        <img  src="file:///C:\Users\cece calmets\OneDrive\Bureau\daycare kiddos 4.jpg">
+    </div>
+
+    <section class="about" id="about">
+
+    </br></br>
+        <h3>About us</h3>
+        <p>
+            Creative Mind Dayhome offers high-quality care for children ages 0-6, 
+            featuring a carefully curated rotation of children to ensure compatibility among peers, 
+            parents, and caregivers. 
+            Our program emphasizes educational activities, emotional support, 
+            and balanced nutrition, fostering holistic development and a love for exploration. 
+            We create a nurturing environment that encourages children 
+            to discover the world around them.
+        </p>
+</br>
+        <video width="320" height="185" controls>
+        <source src="file:///C:\Users\cece calmets\OneDrive\Bureau\Untitled ‑ Made with FlexClip.mp4" type="video/mp4">
+
+        </video>
+    </section>
+</br></br>
+    <section class="testimonial" id="testimonial">
+        <h3>
+            Testemonials
+        </h3>
+        
+        <div >
+            <a class="name">Makayla</a>
+            <p>We are so grateful to have found Creative Mind,
+                 a true gem of a home daycare! Owned and operated.
+                This dayhome is filled with love, warmth, and care. 
+                From the moment we arrived, we knew our child would 
+                be in safe hands.</p>
+
+            <a class="name">Stephanie</a>
+            <p>Creative Mind Dayhome creates a nurturing 
+                environment where every child feels valued and 
+                supported. The daily activities are thoughtfully
+                planned, promoting both learning and play, which
+                 has allowed our child to flourish socially and 
+                 emotionally. We appreciate the personalized 
+                 attention and the way they truly 
+                 connects with each child.</p>
+
+            <a class="name">Shayla</a>
+            <p>Communication is excellent, and we always receive 
+                updates about our child's day. It feels like a 
+                home away from home. We wholeheartedly recommend 
+                Creative Mind Dayhome to any parent looking for a 
+                loving and caring place for their little ones!
+            </p>
+
+        </div>
+    </section>
+</br> </br> 
+    <section class="contact" id="contact">
+        <h3 class="heading">Contact Me</h3>
+        <p class="phone">587.586.8145</p>
+    </br>
+    <div class="emailBox">
+        <form action="mailto:cece.calmets@yahoo.com" method="POST" 
+        enctype="multipart/form-data" name="EmailForm">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+            </br>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+        </br>
+            <div class="input-group-2">
+                <textarea name="" id="" cols="70" rows="15" 
+                placeholder="Your Message"></textarea>
+                <hr>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </div>
+    </section>
+</br>
+    <footer>
+        <p class="copyright">
+            © Clementine Calmets | All right reserved
+        </p>
+    </footer>
+    <script>
+
+    </script>
+</body>
+</html>
